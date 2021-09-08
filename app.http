@@ -1,3 +1,48 @@
-####
 
-GET 
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "id": 1,
+    "username": "prathap",
+    "password": "prathap@2021"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "prathap",
+    "password": "prathap@2021"
+}
+
+###
+POST http://localhost:3000/records/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhdGhhcCIsImlhdCI6MTYzMTExMTY4Mn0.obHxXVNYBeSi9XNHIRADVOaygvJUoK1gmUx8FF_CNxU
+
+{
+    "content": [
+        {
+            "id": 1,
+            "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+            "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+        },
+        {
+            "id": 2,
+            "title": "qui est esse",
+            "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+        },
+    ]
+}
+
+
+###
+GET http://localhost:3000/records/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhdGhhcCIsImlhdCI6MTYzMTExMTY4Mn0.obHxXVNYBeSi9XNHIRADVOaygvJUoK1gmUx8FF_CNxU
+
+
+
+
